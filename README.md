@@ -70,3 +70,5 @@ Scores by School Spending
 Create a table that breaks down school performance based on average spending ranges (per student).
 
 Use the code provided below to create four bins with reasonable cutoff values to group school spending.
+
+**Please note that code runs properly with errors displayed, created with assistance with Geronimo Perez
