@@ -1,74 +1,59 @@
-# pandas-analysis
-Background
-You are the new Chief Data Scientist for your city's school district. In this capacity, you'll be helping the school board and mayor make strategic decisions regarding future school budgets and priorities.
+# School District Data Analysis
 
-As a first task, you've been asked to analyze the district-wide standardized test results. You'll be given access to every student's math and reading scores, as well as various information on the schools they attend. Your task is to aggregate the data to showcase obvious trends in school performance.
+As the Chief Data Scientist for the city's school district, our goal is to assist the school board and mayor in making informed decisions about school budgets and priorities. Our initial focus is on analyzing district-wide standardized test results to identify trends in school performance.
 
-District Summary
-Perform the necessary calculations and then create a high-level snapshot of the district's key metrics in a DataFrame.
+## District Summary
 
-Include the following:
+We begin by calculating and presenting key metrics for the entire district in a DataFrame:
 
-Total number of unique schools
+- Total number of schools
+- Total number of students
+- Total budget
+- Average math score
+- Average reading score
+- Percentage passing math
+- Percentage passing reading
+- Overall passing percentage
 
-Total students
+## School Summary
 
-Total budget
+Next, we summarize essential metrics for each school in a DataFrame:
 
-Average math score
+- School name
+- School type
+- Total students
+- Total school budget
+- Per student budget
+- Average math score
+- Average reading score
+- Percentage passing math
+- Percentage passing reading
+- Overall passing percentage
 
-Average reading score
+## Top Performing Schools
 
-% passing math (the percentage of students who passed math)
+Identify and display the top 5 schools based on % Overall Passing:
 
-% passing reading (the percentage of students who passed reading)
+- Schools sorted by % Overall Passing in descending order
+- Results saved in a DataFrame named "top_schools"
 
-% overall passing (the percentage of students who passed math AND reading)
+## Bottom Performing Schools
 
-School Summary
-Perform the necessary calculations and then create a DataFrame that summarizes key metrics about each school.
+Identify and display the bottom 5 schools based on % Overall Passing:
 
-Include the following:
+- Schools sorted by % Overall Passing in ascending order
+- Results saved in a DataFrame named "bottom_schools"
 
-School name
+## Math and Reading Scores by Grade
 
-School type
+Analyze average math and reading scores for each grade level (9th, 10th, 11th, 12th) at each school:
 
-Total students
+- Separate DataFrames for math and reading scores by grade
 
-Total school budget
+## Scores by School Spending
 
-Per student budget
+Examine school performance based on average spending ranges per student:
 
-Average math score
-
-Average reading score
-
-% passing math (the percentage of students who passed math)
-
-% passing reading (the percentage of students who passed reading)
-
-% overall passing (the percentage of students who passed math AND reading)
-
-Highest-Performing Schools (by % Overall Passing)
-Sort the schools by % Overall Passing in descending order and display the top 5 rows.
-
-Save the results in a DataFrame called "top_schools".
-
-Lowest-Performing Schools (by % Overall Passing)
-Sort the schools by % Overall Passing in ascending order and display the top 5 rows.
-
-Save the results in a DataFrame called "bottom_schools".
-
-Math Scores by Grade
-Perform the necessary calculations to create a DataFrame that lists the average math score for students of each grade level (9th, 10th, 11th, 12th) at each school.
-
-Reading Scores by Grade
-Create a DataFrame that lists the average reading score for students of each grade level (9th, 10th, 11th, 12th) at each school.
-
-Scores by School Spending
-Create a table that breaks down school performance based on average spending ranges (per student).
-
-Use the code provided below to create four bins with reasonable cutoff values to group school spending.
-
-**Please note that code runs properly with errors displayed, created with assistance with Geronimo Perez
+- Utilize provided code to create spending bins
+- Group schools based on spending range
+- Analyze metrics within each spending range
